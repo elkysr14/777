@@ -1,0 +1,11 @@
+CACHE MANIFEST
+
+# v1.0
+
+CACHE:
+index.html
+style.css
+goldhen.bin
+
+NETWORK:
+*

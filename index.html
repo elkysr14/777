@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<meta charset="utf-8">
+<title>PS4 9.00 Offline Host</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>PS4 9.00 Offline Host</h1>
+<h2 id="status">Installing Cache...</h2>
+
+<script>
+function done() {
+    document.getElementById("status").innerHTML =
+    "Cache Installed ✔<br>Close Browser And Disable Internet";
+}
+
+if (window.applicationCache) {
+    window.applicationCache.oncached = done;
+    window.applicationCache.onupdateready = done;
+}
+</script>
+
+</body>
+</html>
